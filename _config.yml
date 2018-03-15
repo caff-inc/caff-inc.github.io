@@ -9,13 +9,15 @@
 title: Caff
 email: your-email@domain.com
 description: >
-  Awesome site description here
+  今日も誰かとおしゃべりしよう
 logo: "/assets/images/logo.jpg"
+google-play-badge: "/assets/images/google-play-badge.png"
+appstore-badge: "/assets/images/appstore-badge.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.caff.co.jp" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
-name: 'Your Name'
+name: 'Caff Inc.'
 bio: >
   Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
   Ne solet nostrum complectitur pri, vis ut inani populo.
