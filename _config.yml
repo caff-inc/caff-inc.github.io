@@ -7,9 +7,14 @@
 
 # Site settings
 title: Caff
+og_title: 出会える、絆が深まる無料通話アプリ「Caff」
+og_description: Caff(カフ)は、みんなに「話したい」を伝える、手軽で簡単な無料通話アプリ。話すことで、恋人や大切な友だちともっと仲良くなれる、素敵な出会いが見つかる、新感覚のSNSです。
+og_site_name: Caff
+og_url: https://www.caff.co.jp
 email: your-email@domain.com
 description: >
   Caff(カフ)は、みんなに「話したい」を伝えて、手軽で簡単に無料通話できるアプリ。話すことで、恋人や大切な友だちともっと仲良くなれる、素敵な出会いが見つかる、新感覚のSNSです。
+keywords: "Caff,カフ"
 logo: "/assets/images/logo.jpg"
 google-play-badge: "/assets/images/google-play-badge.png"
 appstore-badge: "/assets/images/appstore-badge.png"
