@@ -6,15 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Caff(カフ)ー寂しさバイバイ。ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
-og_title: Caff(カフ)ー寂しさバイバイ。ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
+title: Caff(カフ)ー寂しさ(さびしさ/さみしさ)バイバイ。ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
+og_title: Caff(カフ)ー寂しさ(さびしさ/さみしさ)バイバイ。ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
 og_description: Caff(カフ)は、寂しいとき、ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
 og_site_name: Caff
 og_url: https://www.caff.co.jp
 email: your-email@domain.com
 description: >
-  Caff(カフ)は、寂しいとき、ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
-keywords: "Caff,カフ"
+  Caff(カフ)は、寂しい(さびしい/さみしい)とき、ワンタッチで、気の合う仲間と話せる会話アプリ。気になるあの人と話して、距離を縮めよう。相性の良い人と話して、新しい出会いを見つけよう。
+keywords: "Caff,カフ,寂しい,寂しさ,さみしい,さみしさ,出会い,話したい,喋りたい"
 logo: "/assets/images/logo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.caff.co.jp" # the base hostname & protocol for your site
