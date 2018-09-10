@@ -15,9 +15,7 @@ email: your-email@domain.com
 description: >
   Caff(カフ)は、みんなに「話したい」を伝えて、手軽で簡単に無料通話できるアプリ。話すことで、恋人や大切な友だちともっと仲良くなれる、素敵な出会いが見つかる、新感覚のSNSです。
 keywords: "Caff,カフ"
-logo: "/assets/images/logo.jpg"
-google-play-badge: "/assets/images/google-play-badge.png"
-appstore-badge: "/assets/images/appstore-badge.png"
+logo: "/assets/images/logo.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.caff.co.jp" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
