@@ -61,12 +61,19 @@ body {
 
 .site-header {
   position: relative;
+  text-align: center;
   width: 100%;
   max-width: 700px;
-  margin: 16px auto 0 auto;
+  margin: 0px auto 0 auto;
+  background-color: #FFC107;
   @include box-sizing(border-box);
   @include respond-to(800) {
     padding: 0 $rs * 1;
+  }
+
+  .logo {
+      background-color: inherit;
+      margin: 0px 8px 0px 8px;
   }
 
   .page-links {
@@ -121,10 +128,22 @@ body {
 .content {
   width: 100%;
   max-width: 700px;
-  margin: 25px auto 0 auto;
+  margin: 0px auto 0 auto;
   @include box-sizing(border-box);
-  @include respond-to(800) {
-    padding: 0 $rs * 1;
+  // @include respond-to(800) {
+  //   padding: 0 $rs * 1;
+  // }
+  .appstore {
+    background-color: #FFFFFF;
+  }
+
+  .googleplay {
+    background-color: #FFFFFF;
+    margin-bottom: 2px;
+  }
+
+  .download {
+    text-align: center;
   }
 
   article {
