@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 運営会社
-permalink: /about/
+permalink: /about/company/
 ---
 
 ## 会社概要
