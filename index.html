@@ -17,18 +17,44 @@ layout: default
   <div class="cf frame">
     <p class="download">
     <amp-img
+    media="(max-width: 699px)"
     class="appstore"
     width="130"
     height="50"
     src="/assets/images/appstore.svg">
     </amp-img>
     <amp-img
+    media="(min-width: 700px)"
+    class="appstore"
+    src="/assets/images/appstore.svg"
+    width="260"
+    height="100">
+    </amp-img>
+    <amp-img
+    media="(max-width: 699px)"
     class="googleplay"
     width="150"
     height="46"
     src="/assets/images/googleplay.png">
     </amp-img>
+    <amp-img
+    media="(min-width: 700px)"
+    class="googleplay"
+    src="/assets/images/googleplay.png"
+    width="300"
+    height="92">
+    </amp-img>
     </p>
+    <div class="appview">
+      <amp-img alt="Caff"
+    src="/assets/images/overall_1x.png"
+    width="375"
+    height="255"
+    layout="responsive"
+    srcset="/assets/images/overall_3x.png 1125w,/assets/images/overall_2x.png 750w,
+              /assets/images/overall_1x.png 375w">
+      </amp-img>
+    </div>
   </div>
 </main>
 
