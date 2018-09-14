@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 電子公告
-permalink: /about/ir/
+title: 利用規約
+permalink: /about/termsofservice/
 ---
 
-## 電子公告
+# 利用規約
 
 まだ情報がありません。
