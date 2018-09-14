@@ -6,6 +6,15 @@ layout: default
 {% include analytics.html %}
   <div>
     <amp-img alt="Caff"
+    class="topimage-wide"
+    media="(min-width: 700px)"
+  src="/assets/images/byebye-wide.png"
+  width="1500"
+  height="797"
+  layout="responsive">
+    </amp-img>
+    <amp-img alt="Caff"
+    media="(max-width: 699px)"
   src="/assets/images/byebye-1x.png"
   width="375"
   height="303"
@@ -47,9 +56,10 @@ layout: default
     </p>
     <div class="appview">
       <amp-img alt="Caff"
+      media="(max-width: 699px)"
     src="/assets/images/overall_1x.png"
     width="375"
-    height="572"
+    height="760"
     layout="responsive"
     srcset="/assets/images/overall_3x.png 1125w,/assets/images/overall_2x.png 750w,
               /assets/images/overall_1x.png 375w">
