@@ -28,15 +28,15 @@ layout: default
     <amp-img
     media="(max-width: 699px)"
     class="appstore"
-    width="130"
+    width="163"
     height="50"
-    src="/assets/images/appstore.svg">
+    src="/assets/images/appstore_soon.png">
     </amp-img>
     <amp-img
     media="(min-width: 700px)"
     class="appstore"
-    src="/assets/images/appstore.svg"
-    width="260"
+    src="/assets/images/appstore_soon.png"
+    width="326"
     height="100">
     </amp-img>
     <amp-img
@@ -66,20 +66,18 @@ layout: default
       </amp-img>
     </div>
   </div>
-  <h2>ニュース</h2>
   <div class="cf frame">
+    <h2 class="before-post">ニュース</h2>
   {% for post in paginator.posts %}
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
       <div class="article-item">
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        </div>
         <header class="post-header">
           <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
         </header>
-        <section class="post-excerpt" itemprop="description">
-          <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-        </section>
-        <div class="post-meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-        </div>
+        <hr />
       </div>
     </article>
   {% endfor %}
