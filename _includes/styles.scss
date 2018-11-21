@@ -26,6 +26,7 @@ $grey-color:       #828282;
     .movie {
       width: 100%;
       height: auto;
+      margin-top: 64px;
     }
 }
 @media screen and (min-width:601px) {
@@ -93,6 +94,7 @@ body {
   @include box-sizing(border-box);
   @media screen and (max-width:600px) {
     .logo {
+      position: fixed;
       padding: 16px;
       text-align: center;
         a {
