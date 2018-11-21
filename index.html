@@ -4,25 +4,10 @@ layout: default
 
 <main class="topcontent" role="main">
 {% include analytics.html %}
-  <div>
-    <amp-img alt="Caff"
-    class="topimage-wide"
-    media="(min-width: 700px)"
-  src="/assets/images/byebye-wide.png"
-  width="1500"
-  height="797"
-  layout="responsive">
-    </amp-img>
-    <amp-img alt="Caff"
-    media="(max-width: 699px)"
-  src="/assets/images/byebye-1x.png"
-  width="375"
-  height="303"
-  layout="responsive"
-  srcset="/assets/images/byebye-3x.png 1125w,/assets/images/byebye-2x.png 750w,
-            /assets/images/byebye-1x.png 375w">
-    </amp-img>
+  <div class="video_frame">
+    <video poster="/assets/images/caff_movie_thumbnail.png" src="/assets/images/caff-movie.mp4" autoplay muted playsinline loop class="movie"></video>
   </div>
+  <h2 class="centering">いますぐCaffをダウンロード！</h2>
   <div class="cf frame">
     <p class="download">
     <a target="_blank" href="https://itunes.apple.com/us/app/caff-カフ-さびしさバイバイ/id1422583997?l=ja&ls=1&mt=8">
@@ -70,6 +55,7 @@ layout: default
       </amp-img>
     </div>
   </div>
+<div class="news">
   <div class="cf frame">
     <h2 class="before-post">ニュース</h2>
   {% for post in paginator.posts %}
@@ -104,7 +90,7 @@ layout: default
     <a class="older-posts disabled">Newer posts &rarr;</a>
   {% endif %}
 </nav>
-
+</div>
 </main>
 
 {% include footer.html %}

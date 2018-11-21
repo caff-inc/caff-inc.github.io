@@ -17,6 +17,32 @@ $grey-color:       #828282;
     }
 }
 
+.centering {
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .movie {
+      width: 100%;
+      height: auto;
+    }
+}
+@media screen and (min-width:601px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .movie {
+      width: 600px;
+      height: 600px;
+      display: block;
+      margin: 0 auto;
+    }
+    .news {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+}
+
+
 amp-img {
   background-color: grey;
 }
@@ -27,8 +53,8 @@ amp-img {
 
 $rs: 16px;
 
-$font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
-$font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
+$font-serif: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo;
+$font-sans: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo;
 
 
 @mixin respond-to($breakpoint) {
@@ -64,17 +90,39 @@ body {
   text-align: center;
   width: 100%;
   margin: 0px auto 0 auto;
-  background-color: #FFC107;
-  border-bottom: 1px solid #BDBDBD;
   @include box-sizing(border-box);
-  @include respond-to(800) {
-    padding: 0 $rs * 1;
+  @media screen and (max-width:600px) {
+    .logo {
+      padding: 16px;
+      text-align: center;
+        a {
+          display: block;
+          background: url("/assets/images/logo.png") no-repeat;
+          border-radius: 25px 25px 25px 25px;
+          width: 50px;
+          height:50px;
+          background-size:cover;
+          font-size: 0;
+        }
+    }
   }
-
-  .logo {
-      background-color: inherit;
-      margin-top: 8px;
-      margin-bottom:8px;
+  @media screen and (min-width:601px) {
+    .logo {
+      position: fixed;
+      padding: 32px;
+      text-align: center;
+        a {
+          display: block;
+          background: url("/assets/images/logo.png") no-repeat;
+          border-radius: 50px 50px 50px 50px;
+          border-width: 1px;
+          border-color: #666666;
+          width: 100px;
+          height:100px;
+          background-size:cover;
+          font-size: 0;
+        }
+    }
   }
 
   .page-links {
@@ -128,11 +176,14 @@ body {
 .topcontent {
   width: 100%;
   margin: 0px auto 0 auto;
-  max-width: 1200px;
 
   .tomimage-wide {
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  .video_frame {
+    background-color: #F7D000;
   }
 
   .appstore {
