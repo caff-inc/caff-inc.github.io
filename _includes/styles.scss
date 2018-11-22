@@ -86,6 +86,38 @@ body {
   font-feature-settings: "liga";
 }
 
+.sub-header {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 30px;
+  padding-bottom:30px;
+  @media screen and (max-width:600px) {
+    h1, h2 {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+  @media screen and (min-width:601px) {
+    h1, h2 {
+      font-size: 36px;
+      line-height: 60px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  span {
+     border-bottom: 4px solid #FFCC00;
+  }
+}
+
 .site-header {
   position: relative;
   text-align: center;
@@ -313,6 +345,10 @@ body {
 }
 
 .before-post {
+   border-radius: 32px;
+   margin-left: 16px;
+   margin-right: 16px;
+   background-color: #FFECB3;
    text-align: center;
 }
 .post {
