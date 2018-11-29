@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "株式会社Caffを設立しました"
+categories: [news]
 ---
 
 株式会社Caffを設立いたしました。同時にFacebookページも公開しました。

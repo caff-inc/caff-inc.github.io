@@ -59,10 +59,29 @@ layout: default
     Caffでいつでも、友だちとトーク！
   </p>
 </div>
-<div class="news">
+<div class="sub-content">
   <div class="cf frame">
-    <h2 class="before-post">ニュース</h2>
+    <h2 class="sub-content-title">ユーザーの声</h2>
   {% for post in paginator.posts %}
+    {% if post.categories contains "users" %}
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <div class="article-item">
+        <header class="post-header">
+          <h2 class="post-title-users" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">"{{ post.title }}"</a>
+            <span>({{post.tags}})</span>
+          </h2>
+        </header>
+        <p>{{post.excerpt}}</p>
+        <hr />
+      </div>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
+  <div class="cf frame">
+    <h2 class="sub-content-title">ニュース</h2>
+  {% for post in paginator.posts %}
+    {% if post.categories contains "news" %}
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
       <div class="article-item">
         <div class="post-meta">
@@ -74,6 +93,7 @@ layout: default
         <hr />
       </div>
     </article>
+    {% endif %}
   {% endfor %}
 </div>
 

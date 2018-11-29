@@ -37,7 +37,7 @@ $grey-color:       #828282;
       display: block;
       margin: 0 auto;
     }
-    .news {
+    .sub-content {
       margin-left: 32px;
       margin-right: 32px;
     }
@@ -346,11 +346,12 @@ body {
   }
 }
 
-.before-post {
+.sub-content-title {
    border-radius: 32px;
    margin-left: 16px;
    margin-right: 16px;
-   background-color: #FFECB3;
+   font-size: 40px;
+   color: #FFCC00;
    text-align: center;
 }
 .post {
@@ -359,6 +360,22 @@ body {
 
   .post-meta {
     font-family: $font-sans;
+  }
+
+  .post-title-users {
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.04em;
+    font-size: 30px;
+    line-height: 1.1;
+    color: #333332;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 400;
+      font-size: 24px;
+      color: #333332;
+    }
   }
   .post-title {
     font-weight: 700;
