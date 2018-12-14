@@ -84,6 +84,44 @@ body {
   -webkit-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga";
+  text-align: center;
+}
+
+.keypoint-column {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    @media screen and (min-width:601px) {
+      width:30%;
+      max-width: 320px;
+      min-height: 380px;
+    }
+    @media screen and (max-width:600px) {
+      display: block;
+      width: 94%;
+      max-width: none;
+      height: auto;
+      min-height: initial;
+      margin: 0 auto 3% auto;
+      padding: 30px 10px;
+    }
+    border-bottom: solid 1px #e5e0d7;
+    margin: 0 10px;
+    padding: 40px 10px;
+    background-color: #FFECB3;
+
+    h2 {
+      font-size: 20px;
+    }
+    span {
+      border-bottom: 4px solid #FFCC00;
+    }
+    p {
+      font-size: 14px;
+    }
+    .image {
+      height:100px;
+    }
 }
 
 .sub-header {
@@ -117,6 +155,9 @@ body {
      border-bottom: 4px solid #FFCC00;
   }
 }
+.site-main-content {
+  padding-top: 100px;
+}
 
 .site-header {
   position: relative;
@@ -127,7 +168,7 @@ body {
   @media screen and (max-width:600px) {
     .logo {
       position: fixed;
-      padding: 16px;
+      padding-left: 16px;
       text-align: center;
         a {
           display: block;
@@ -182,7 +223,7 @@ body {
 
 .blog-header {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   position: relative;
   padding: 0;
@@ -208,8 +249,22 @@ body {
   }
 }
 
+.appstore {
+  background-color: #FFFFFF;
+}
+
+.googleplay {
+  background-color: #FFFFFF;
+  margin-bottom: 2px;
+}
+
 .topcontent {
-  width: 100%;
+  @media(min-width: 601px) {
+  width: 92%;
+  }
+  @media(max-width: 600px) {
+    width: 100%;
+  }
   margin: 0px auto 0 auto;
 
   .tomimage-wide {
@@ -219,15 +274,6 @@ body {
 
   .video_frame {
     background-color: #FFCC00;
-  }
-
-  .appstore {
-    background-color: #FFFFFF;
-  }
-
-  .googleplay {
-    background-color: #FFFFFF;
-    margin-bottom: 2px;
   }
 
   .download {
@@ -358,22 +404,41 @@ body {
   margin-right: 16px;
   margin-left: 16px;
 
+  text-align: left;
+
   .post-meta {
     font-family: $font-sans;
   }
-
+  p {
+    @media(min-width: 601px) {
+      font-size: 20px;
+    }
+    @media(max-width: 600px) {
+      font-size: 16px;
+    }
+  }
   .post-title-users {
     font-weight: 700;
     font-style: italic;
     letter-spacing: -0.04em;
-    font-size: 30px;
+    @media(min-width: 601px) {
+      font-size: 30px;
+    }
+    @media(max-width: 600px) {
+      font-size: 20px;
+    }
     line-height: 1.1;
     color: #333332;
     margin-bottom: 10px;
 
     span {
       font-weight: 400;
-      font-size: 24px;
+      @media(min-width: 601px) {
+        font-size: 24px;
+      }
+      @media(max-width: 600px) {
+        font-size: 16px;
+      }
       color: #333332;
     }
   }
